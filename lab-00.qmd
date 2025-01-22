@@ -1,26 +1,17 @@
 ---
-title: "Untitled"
-author: Lucy D'Agostino McGowan
+title: "Lab 00"
+author: "Lucy D'Agostino McGowan"
 format: html
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Exercise 1
 
 ```{r}
-1 + 1
+#| message: false
+#| warning: false
+library(tidyverse)
+discordant_data <- read_csv(
+  "https://raw.githubusercontent.com/blythejane/covid_safety/c92a4c60a83e67179202fafdf89858c6bafaaa7e/discordant_data.csv"
+)
 ```
 
-You can add options to executable code like this 
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
